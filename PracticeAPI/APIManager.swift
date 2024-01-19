@@ -22,7 +22,7 @@ class APIManager{
         let url = URL(string: urlString)
         
         var request = URLRequest(url: url!)
-        request.setValue("WtkR9zE3C8oo2AN9avdZGw==AqUAwAZlaVrdRiIi", forHTTPHeaderField: "X-Api-Key")
+        request.setValue("", forHTTPHeaderField: "X-Api-Key")
         
         let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
             if let error = error {
